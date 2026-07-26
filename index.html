@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/png" href="Amber.png">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Gift For Amber</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+
+<div class="card" id="loginPage">
+
+    <h1>A Little Gift Awaits...</h1>
+
+    <p>Only the birthday girl may enter.</p>
+
+    <input type="text"
+    id="name"
+    placeholder="First Name">
+
+    <input type="date"
+    id="birthday">
+
+    <button onclick="checkLogin()">
+        Unlock
+    </button>
+
+    <p id="error"></p>
+
+</div>
+
+
+
+<!-- BIRTHDAY PAGE -->
+
+<div class="card hidden" id="birthdayPage">
+
+    <h1>Happy Birthday, Amber!</h1>
+
+    <h2 id="ageText"></h2>
+
+    <p class="message">
+
+        May your smile never fade,
+        and may all the happiness in
+        the world find its way to you.
+
+    </p>
+
+
+    <video controls>
+
+        <source
+        src="birthday.mp4"
+        type="video/mp4">
+
+    </video>
+
+
+    <h3>
+        Thank you for existing.
+    </h3>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
